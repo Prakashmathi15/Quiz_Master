@@ -26,7 +26,17 @@ function strictScoring(userAnswers, correctAnswers) {
 }
 
 
-
+function lenientScoring(userAnswers, correctAnswers) {
+  let score = 0;
+  for (let i = 0; i < correctAnswers.length; i++) {
+    if (
+      userAnswers[i].trim().toLowerCase() === correctAnswers[i].toLowerCase()
+    ) {
+      score++;
+    }
+  }
+  return score;
+}
 
 
 function handleScoring(callback) {
