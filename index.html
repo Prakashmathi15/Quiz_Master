@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>QuizMaster</h1>
+
+    <div class="question">
+      <label>1. What does HTML stand for?</label>
+      <input type="text" id="q1" />
+    </div>
+
+    <div class="question">
+      <label>2. What is the output of: <code>console.log(typeof NaN)</code>?</label>
+      <input type="text" id="q2" />
+    </div>
+
+    <div class="question">
+      <label>3. Which keyword is used to create a constant in JavaScript?</label>
+      <input type="text" id="q3" />
+    </div>
+
+    <button onclick="handleScoring(strictScoring)">Check Score</button>
+  
+
+    <div class="score" id="scoreDisplay"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
